@@ -7,8 +7,7 @@
  * @noinspection PhpUnused
  */
 
-const EXCEPTION_MESSAGE = 'You should not autoload or include file `autcomplete.php`! ' .
-    'This file exists only for IDE auto complete function.';
+const EXCEPTION_MESSAGE = 'You should not autoload or include file `autcomplete.php`! This file exists only for IDE auto complete function.';
 
 
 const TRADER_MA_TYPE_SMA = 0;
