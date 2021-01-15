@@ -26,3 +26,4 @@ If your IDE does not auto-complete functions from the PHP Trader extension, add 
 ![PHPStorm auto-complete fixed](image.png "PHPStorm auto-complete fixed")
 
 The package has been created based on [LupeCode/phpTraderInterface](https://github.com/LupeCode/phpTraderInterface).
+
