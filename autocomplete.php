@@ -7,8 +7,7 @@
  * @noinspection PhpUnused
  */
 
-const EXCEPTION_MESSAGE = 'You should not autoload or include file `autcomplete.php`! ' .
-    'This file exists only for IDE auto complete function.';
+const EXCEPTION_MESSAGE = 'You should not autoload or include file `autcomplete.php`! This file exists only for IDE auto complete function.';
 
 
 const TRADER_MA_TYPE_SMA = 0;
@@ -75,7 +74,7 @@ const TRADER_ERR_UNKNOWN_ERROR = 65535;
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_acos(array $real): array
+function trader_acos(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -90,7 +89,7 @@ function trader_acos(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ad(array $high, array $low, array $close, array $volume): array
+function trader_ad(array $high, array $low, array $close, array $volume)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -103,7 +102,7 @@ function trader_ad(array $high, array $low, array $close, array $volume): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_add(array $real0, array $real1): array
+function trader_add(array $real0, array $real1)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -125,9 +124,9 @@ function trader_adosc(
     array $low,
     array $close,
     array $volume,
-    int $fastPeriod = 3,
-    int $slowPeriod = 10
-): array {
+    $fastPeriod = 3,
+    $slowPeriod = 10
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -141,7 +140,7 @@ function trader_adosc(
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_adx(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_adx(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -156,7 +155,7 @@ function trader_adx(array $high, array $low, array $close, int $timePeriod = 14)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_adxr(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_adxr(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -171,7 +170,7 @@ function trader_adxr(array $high, array $low, array $close, int $timePeriod = 14
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_apo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $mAType = TRADER_MA_TYPE_SMA): array
+function trader_apo(array $real, $fastPeriod = 12, $slowPeriod = 26, $mAType = TRADER_MA_TYPE_SMA)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -185,7 +184,7 @@ function trader_apo(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_aroon(array $high, array $low, int $timePeriod = 14): array
+function trader_aroon(array $high, array $low, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -199,7 +198,7 @@ function trader_aroon(array $high, array $low, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_aroonosc(array $high, array $low, int $timePeriod = 14): array
+function trader_aroonosc(array $high, array $low, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -212,7 +211,7 @@ function trader_aroonosc(array $high, array $low, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_asin(array $real): array
+function trader_asin(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -225,7 +224,7 @@ function trader_asin(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_atan(array $real): array
+function trader_atan(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -240,7 +239,7 @@ function trader_atan(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_atr(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_atr(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -255,7 +254,7 @@ function trader_atr(array $high, array $low, array $close, int $timePeriod = 14)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_avgprice(array $open, array $high, array $low, array $close): array
+function trader_avgprice(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -273,11 +272,11 @@ function trader_avgprice(array $open, array $high, array $low, array $close): ar
  */
 function trader_bbands(
     array $real,
-    int $timePeriod = 5,
-    float $nbDevUp = 2.0,
-    float $nbDevDn = 2.0,
-    int $mAType = TRADER_MA_TYPE_SMA
-): array {
+    $timePeriod = 5,
+    $nbDevUp = 2.0,
+    $nbDevDn = 2.0,
+    $mAType = TRADER_MA_TYPE_SMA
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -290,7 +289,7 @@ function trader_bbands(
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_beta(array $real0, array $real1, int $timePeriod = 5): array
+function trader_beta(array $real0, array $real1, $timePeriod = 5)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -305,7 +304,7 @@ function trader_beta(array $real0, array $real1, int $timePeriod = 5): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_bop(array $open, array $high, array $low, array $close): array
+function trader_bop(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -320,7 +319,7 @@ function trader_bop(array $open, array $high, array $low, array $close): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cci(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_cci(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -335,7 +334,7 @@ function trader_cci(array $high, array $low, array $close, int $timePeriod = 14)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl2crows(array $open, array $high, array $low, array $close): array
+function trader_cdl2crows(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -350,7 +349,7 @@ function trader_cdl2crows(array $open, array $high, array $low, array $close): a
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl3blackcrows(array $open, array $high, array $low, array $close): array
+function trader_cdl3blackcrows(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -365,7 +364,7 @@ function trader_cdl3blackcrows(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl3inside(array $open, array $high, array $low, array $close): array
+function trader_cdl3inside(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -380,7 +379,7 @@ function trader_cdl3inside(array $open, array $high, array $low, array $close): 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl3linestrike(array $open, array $high, array $low, array $close): array
+function trader_cdl3linestrike(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -395,7 +394,7 @@ function trader_cdl3linestrike(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl3outside(array $open, array $high, array $low, array $close): array
+function trader_cdl3outside(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -410,7 +409,7 @@ function trader_cdl3outside(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl3starsinsouth(array $open, array $high, array $low, array $close): array
+function trader_cdl3starsinsouth(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -425,7 +424,7 @@ function trader_cdl3starsinsouth(array $open, array $high, array $low, array $cl
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdl3whitesoldiers(array $open, array $high, array $low, array $close): array
+function trader_cdl3whitesoldiers(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -441,7 +440,7 @@ function trader_cdl3whitesoldiers(array $open, array $high, array $low, array $c
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlabandonedbaby(array $open, array $high, array $low, array $close, float $penetration = 0.3): array
+function trader_cdlabandonedbaby(array $open, array $high, array $low, array $close, $penetration = 0.3)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -456,7 +455,7 @@ function trader_cdlabandonedbaby(array $open, array $high, array $low, array $cl
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdladvanceblock(array $open, array $high, array $low, array $close): array
+function trader_cdladvanceblock(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -471,7 +470,7 @@ function trader_cdladvanceblock(array $open, array $high, array $low, array $clo
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlbelthold(array $open, array $high, array $low, array $close): array
+function trader_cdlbelthold(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -486,7 +485,7 @@ function trader_cdlbelthold(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlbreakaway(array $open, array $high, array $low, array $close): array
+function trader_cdlbreakaway(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -501,7 +500,7 @@ function trader_cdlbreakaway(array $open, array $high, array $low, array $close)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlclosingmarubozu(array $open, array $high, array $low, array $close): array
+function trader_cdlclosingmarubozu(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -516,7 +515,7 @@ function trader_cdlclosingmarubozu(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlconcealbabyswall(array $open, array $high, array $low, array $close): array
+function trader_cdlconcealbabyswall(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -531,7 +530,7 @@ function trader_cdlconcealbabyswall(array $open, array $high, array $low, array 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlcounterattack(array $open, array $high, array $low, array $close): array
+function trader_cdlcounterattack(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -547,7 +546,7 @@ function trader_cdlcounterattack(array $open, array $high, array $low, array $cl
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdldarkcloudcover(array $open, array $high, array $low, array $close, float $penetration = 0.5): array
+function trader_cdldarkcloudcover(array $open, array $high, array $low, array $close, $penetration = 0.5)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -562,7 +561,7 @@ function trader_cdldarkcloudcover(array $open, array $high, array $low, array $c
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdldoji(array $open, array $high, array $low, array $close): array
+function trader_cdldoji(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -577,7 +576,7 @@ function trader_cdldoji(array $open, array $high, array $low, array $close): arr
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdldojistar(array $open, array $high, array $low, array $close): array
+function trader_cdldojistar(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -592,7 +591,7 @@ function trader_cdldojistar(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdldragonflydoji(array $open, array $high, array $low, array $close): array
+function trader_cdldragonflydoji(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -607,7 +606,7 @@ function trader_cdldragonflydoji(array $open, array $high, array $low, array $cl
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlengulfing(array $open, array $high, array $low, array $close): array
+function trader_cdlengulfing(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -623,7 +622,7 @@ function trader_cdlengulfing(array $open, array $high, array $low, array $close)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdleveningdojistar(array $open, array $high, array $low, array $close, float $penetration = 0.3): array
+function trader_cdleveningdojistar(array $open, array $high, array $low, array $close, $penetration = 0.3)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -639,7 +638,7 @@ function trader_cdleveningdojistar(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdleveningstar(array $open, array $high, array $low, array $close, float $penetration = 0.3): array
+function trader_cdleveningstar(array $open, array $high, array $low, array $close, $penetration = 0.3)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -654,7 +653,7 @@ function trader_cdleveningstar(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlgapsidesidewhite(array $open, array $high, array $low, array $close): array
+function trader_cdlgapsidesidewhite(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -669,7 +668,7 @@ function trader_cdlgapsidesidewhite(array $open, array $high, array $low, array 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlgravestonedoji(array $open, array $high, array $low, array $close): array
+function trader_cdlgravestonedoji(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -684,7 +683,7 @@ function trader_cdlgravestonedoji(array $open, array $high, array $low, array $c
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlhammer(array $open, array $high, array $low, array $close): array
+function trader_cdlhammer(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -699,7 +698,7 @@ function trader_cdlhammer(array $open, array $high, array $low, array $close): a
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlhangingman(array $open, array $high, array $low, array $close): array
+function trader_cdlhangingman(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -714,7 +713,7 @@ function trader_cdlhangingman(array $open, array $high, array $low, array $close
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlharami(array $open, array $high, array $low, array $close): array
+function trader_cdlharami(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -729,7 +728,7 @@ function trader_cdlharami(array $open, array $high, array $low, array $close): a
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlharamicross(array $open, array $high, array $low, array $close): array
+function trader_cdlharamicross(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -744,7 +743,7 @@ function trader_cdlharamicross(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlhighwave(array $open, array $high, array $low, array $close): array
+function trader_cdlhighwave(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -759,7 +758,7 @@ function trader_cdlhighwave(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlhikkake(array $open, array $high, array $low, array $close): array
+function trader_cdlhikkake(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -774,7 +773,7 @@ function trader_cdlhikkake(array $open, array $high, array $low, array $close): 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlhikkakemod(array $open, array $high, array $low, array $close): array
+function trader_cdlhikkakemod(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -789,7 +788,7 @@ function trader_cdlhikkakemod(array $open, array $high, array $low, array $close
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlhomingpigeon(array $open, array $high, array $low, array $close): array
+function trader_cdlhomingpigeon(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -804,7 +803,7 @@ function trader_cdlhomingpigeon(array $open, array $high, array $low, array $clo
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlidentical3crows(array $open, array $high, array $low, array $close): array
+function trader_cdlidentical3crows(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -819,7 +818,7 @@ function trader_cdlidentical3crows(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlinneck(array $open, array $high, array $low, array $close): array
+function trader_cdlinneck(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -834,7 +833,7 @@ function trader_cdlinneck(array $open, array $high, array $low, array $close): a
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlinvertedhammer(array $open, array $high, array $low, array $close): array
+function trader_cdlinvertedhammer(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -849,7 +848,7 @@ function trader_cdlinvertedhammer(array $open, array $high, array $low, array $c
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlkicking(array $open, array $high, array $low, array $close): array
+function trader_cdlkicking(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -864,7 +863,7 @@ function trader_cdlkicking(array $open, array $high, array $low, array $close): 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlkickingbylength(array $open, array $high, array $low, array $close): array
+function trader_cdlkickingbylength(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -879,7 +878,7 @@ function trader_cdlkickingbylength(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlladderbottom(array $open, array $high, array $low, array $close): array
+function trader_cdlladderbottom(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -894,7 +893,7 @@ function trader_cdlladderbottom(array $open, array $high, array $low, array $clo
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdllongleggeddoji(array $open, array $high, array $low, array $close): array
+function trader_cdllongleggeddoji(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -909,7 +908,7 @@ function trader_cdllongleggeddoji(array $open, array $high, array $low, array $c
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdllongline(array $open, array $high, array $low, array $close): array
+function trader_cdllongline(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -924,7 +923,7 @@ function trader_cdllongline(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlmarubozu(array $open, array $high, array $low, array $close): array
+function trader_cdlmarubozu(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -939,7 +938,7 @@ function trader_cdlmarubozu(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlmatchinglow(array $open, array $high, array $low, array $close): array
+function trader_cdlmatchinglow(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -955,7 +954,7 @@ function trader_cdlmatchinglow(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlmathold(array $open, array $high, array $low, array $close, float $penetration = 0.5): array
+function trader_cdlmathold(array $open, array $high, array $low, array $close, $penetration = 0.5)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -971,7 +970,7 @@ function trader_cdlmathold(array $open, array $high, array $low, array $close, f
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlmorningdojistar(array $open, array $high, array $low, array $close, float $penetration = 0.3): array
+function trader_cdlmorningdojistar(array $open, array $high, array $low, array $close, $penetration = 0.3)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -987,7 +986,7 @@ function trader_cdlmorningdojistar(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlmorningstar(array $open, array $high, array $low, array $close, float $penetration = 0.3): array
+function trader_cdlmorningstar(array $open, array $high, array $low, array $close, $penetration = 0.3)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1002,7 +1001,7 @@ function trader_cdlmorningstar(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlonneck(array $open, array $high, array $low, array $close): array
+function trader_cdlonneck(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1017,7 +1016,7 @@ function trader_cdlonneck(array $open, array $high, array $low, array $close): a
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlpiercing(array $open, array $high, array $low, array $close): array
+function trader_cdlpiercing(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1032,7 +1031,7 @@ function trader_cdlpiercing(array $open, array $high, array $low, array $close):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlrickshawman(array $open, array $high, array $low, array $close): array
+function trader_cdlrickshawman(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1047,7 +1046,7 @@ function trader_cdlrickshawman(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlrisefall3methods(array $open, array $high, array $low, array $close): array
+function trader_cdlrisefall3methods(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1062,7 +1061,7 @@ function trader_cdlrisefall3methods(array $open, array $high, array $low, array 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlseparatinglines(array $open, array $high, array $low, array $close): array
+function trader_cdlseparatinglines(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1077,7 +1076,7 @@ function trader_cdlseparatinglines(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlshootingstar(array $open, array $high, array $low, array $close): array
+function trader_cdlshootingstar(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1092,7 +1091,7 @@ function trader_cdlshootingstar(array $open, array $high, array $low, array $clo
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlshortline(array $open, array $high, array $low, array $close): array
+function trader_cdlshortline(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1107,7 +1106,7 @@ function trader_cdlshortline(array $open, array $high, array $low, array $close)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlspinningtop(array $open, array $high, array $low, array $close): array
+function trader_cdlspinningtop(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1122,7 +1121,7 @@ function trader_cdlspinningtop(array $open, array $high, array $low, array $clos
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlstalledpattern(array $open, array $high, array $low, array $close): array
+function trader_cdlstalledpattern(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1137,7 +1136,7 @@ function trader_cdlstalledpattern(array $open, array $high, array $low, array $c
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlsticksandwich(array $open, array $high, array $low, array $close): array
+function trader_cdlsticksandwich(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1152,7 +1151,7 @@ function trader_cdlsticksandwich(array $open, array $high, array $low, array $cl
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdltakuri(array $open, array $high, array $low, array $close): array
+function trader_cdltakuri(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1167,7 +1166,7 @@ function trader_cdltakuri(array $open, array $high, array $low, array $close): a
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdltasukigap(array $open, array $high, array $low, array $close): array
+function trader_cdltasukigap(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1182,7 +1181,7 @@ function trader_cdltasukigap(array $open, array $high, array $low, array $close)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlthrusting(array $open, array $high, array $low, array $close): array
+function trader_cdlthrusting(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1197,7 +1196,7 @@ function trader_cdlthrusting(array $open, array $high, array $low, array $close)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdltristar(array $open, array $high, array $low, array $close): array
+function trader_cdltristar(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1212,7 +1211,7 @@ function trader_cdltristar(array $open, array $high, array $low, array $close): 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlunique3river(array $open, array $high, array $low, array $close): array
+function trader_cdlunique3river(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1227,7 +1226,7 @@ function trader_cdlunique3river(array $open, array $high, array $low, array $clo
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlupsidegap2crows(array $open, array $high, array $low, array $close): array
+function trader_cdlupsidegap2crows(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1242,7 +1241,7 @@ function trader_cdlupsidegap2crows(array $open, array $high, array $low, array $
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cdlxsidegap3methods(array $open, array $high, array $low, array $close): array
+function trader_cdlxsidegap3methods(array $open, array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1255,7 +1254,7 @@ function trader_cdlxsidegap3methods(array $open, array $high, array $low, array 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ceil(array $real): array
+function trader_ceil(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1268,7 +1267,7 @@ function trader_ceil(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cmo(array $real, int $timePeriod = 14): array
+function trader_cmo(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1282,7 +1281,7 @@ function trader_cmo(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_correl(array $real0, array $real1, int $timePeriod = 30): array
+function trader_correl(array $real0, array $real1, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1295,7 +1294,7 @@ function trader_correl(array $real0, array $real1, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cos(array $real): array
+function trader_cos(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1308,7 +1307,7 @@ function trader_cos(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_cosh(array $real): array
+function trader_cosh(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1321,7 +1320,7 @@ function trader_cosh(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_dema(array $real, int $timePeriod = 3): array
+function trader_dema(array $real, $timePeriod = 3)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1335,7 +1334,7 @@ function trader_dema(array $real, int $timePeriod = 3): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_div(array $real0, array $real1): array
+function trader_div(array $real0, array $real1)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1350,7 +1349,7 @@ function trader_div(array $real0, array $real1): array
  *
  * @return array  Returns an array with calculated data or false on failure.
  */
-function trader_dx(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_dx(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1363,7 +1362,7 @@ function trader_dx(array $high, array $low, array $close, int $timePeriod = 14):
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ema(array $real, int $timePeriod = 30): array
+function trader_ema(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1374,7 +1373,7 @@ function trader_ema(array $real, int $timePeriod = 30): array
  *
  * @return int Returns the error code identified by one of the TRADER_ERR_* constants.
  */
-function trader_errno(): int
+function trader_errno()
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1387,7 +1386,7 @@ function trader_errno(): int
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_exp(array $real): array
+function trader_exp(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1400,7 +1399,7 @@ function trader_exp(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_floor(array $real): array
+function trader_floor(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1411,7 +1410,7 @@ function trader_floor(array $real): array
  *
  * @return int Returns the compatibility mode id which can be identified by TRADER_COMPATIBILITY_* series of constants.
  */
-function trader_get_compat(): int
+function trader_get_compat()
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1424,7 +1423,7 @@ function trader_get_compat(): int
  *
  * @return int Returns the unstable period factor for the corresponding function.
  */
-function trader_get_unstable_period(int $functionId): int
+function trader_get_unstable_period($functionId)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1436,7 +1435,7 @@ function trader_get_unstable_period(int $functionId): int
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ht_dcperiod(array $real): array
+function trader_ht_dcperiod(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1448,7 +1447,7 @@ function trader_ht_dcperiod(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ht_dcphase(array $real): array
+function trader_ht_dcphase(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1461,7 +1460,7 @@ function trader_ht_dcphase(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ht_phasor(array $real, array &$inPhase): array
+function trader_ht_phasor(array $real, array &$inPhase)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1474,7 +1473,7 @@ function trader_ht_phasor(array $real, array &$inPhase): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ht_sine(array $real, array &$sine): array
+function trader_ht_sine(array $real, array &$sine)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1486,7 +1485,7 @@ function trader_ht_sine(array $real, array &$sine): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ht_trendline(array $real): array
+function trader_ht_trendline(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1498,7 +1497,7 @@ function trader_ht_trendline(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ht_trendmode(array $real): array
+function trader_ht_trendmode(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1511,7 +1510,7 @@ function trader_ht_trendmode(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_kama(array $real, int $timePeriod = 30): array
+function trader_kama(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1524,7 +1523,7 @@ function trader_kama(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_linearreg_angle(array $real, int $timePeriod = 14): array
+function trader_linearreg_angle(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1537,7 +1536,7 @@ function trader_linearreg_angle(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_linearreg_intercept(array $real, int $timePeriod = 14): array
+function trader_linearreg_intercept(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1550,7 +1549,7 @@ function trader_linearreg_intercept(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_linearreg_slope(array $real, int $timePeriod = 14): array
+function trader_linearreg_slope(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1563,7 +1562,7 @@ function trader_linearreg_slope(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_linearreg(array $real, int $timePeriod = 14): array
+function trader_linearreg(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1576,7 +1575,7 @@ function trader_linearreg(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ln(array $real): array
+function trader_ln(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1589,7 +1588,7 @@ function trader_ln(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_log10(array $real): array
+function trader_log10(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1603,7 +1602,7 @@ function trader_log10(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ma(array $real, int $timePeriod = 30, int $mAType = TRADER_MA_TYPE_SMA): array
+function trader_ma(array $real, $timePeriod = 30, $mAType = TRADER_MA_TYPE_SMA)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1618,7 +1617,7 @@ function trader_ma(array $real, int $timePeriod = 30, int $mAType = TRADER_MA_TY
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_macd(array $real, int $fastPeriod = 12, int $slowPeriod = 26, int $signalPeriod = 9): array
+function trader_macd(array $real, $fastPeriod = 12, $slowPeriod = 26, $signalPeriod = 9)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1637,12 +1636,12 @@ function trader_macd(array $real, int $fastPeriod = 12, int $slowPeriod = 26, in
  */
 function trader_macdext(
     array $real,
-    int $fastPeriod = 12,
-    int $fastMAType = TRADER_MA_TYPE_SMA,
-    int $slowPeriod = 26,
-    int $slowMAType = TRADER_MA_TYPE_SMA,
-    int $signalPeriod = 9
-): array {
+    $fastPeriod = 12,
+    $fastMAType = TRADER_MA_TYPE_SMA,
+    $slowPeriod = 26,
+    $slowMAType = TRADER_MA_TYPE_SMA,
+    $signalPeriod = 9
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -1654,7 +1653,7 @@ function trader_macdext(
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_macdfix(array $real, int $signalPeriod = 9): array
+function trader_macdfix(array $real, $signalPeriod = 9)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1668,7 +1667,7 @@ function trader_macdfix(array $real, int $signalPeriod = 9): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.05): array
+function trader_mama(array $real, $fastLimit = 0.5, $slowLimit = 0.05)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1687,10 +1686,10 @@ function trader_mama(array $real, float $fastLimit = 0.5, float $slowLimit = 0.0
 function trader_mavp(
     array $real,
     array $periods,
-    int $minPeriod = 2,
-    int $maxPeriod = 30,
-    int $mAType = TRADER_MA_TYPE_SMA
-): array {
+    $minPeriod = 2,
+    $maxPeriod = 30,
+    $mAType = TRADER_MA_TYPE_SMA
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -1702,7 +1701,7 @@ function trader_mavp(
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_max(array $real, int $timePeriod = 30): array
+function trader_max(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1715,7 +1714,7 @@ function trader_max(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_maxindex(array $real, int $timePeriod = 30): array
+function trader_maxindex(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1728,7 +1727,7 @@ function trader_maxindex(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_medprice(array $high, array $low): array
+function trader_medprice(array $high, array $low)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1744,7 +1743,7 @@ function trader_medprice(array $high, array $low): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_mfi(array $high, array $low, array $close, array $volume, int $timePeriod = 14): array
+function trader_mfi(array $high, array $low, array $close, array $volume, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1757,7 +1756,7 @@ function trader_mfi(array $high, array $low, array $close, array $volume, int $t
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_midpoint(array $real, int $timePeriod = 14): array
+function trader_midpoint(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1771,7 +1770,7 @@ function trader_midpoint(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_midprice(array $high, array $low, int $timePeriod = 14): array
+function trader_midprice(array $high, array $low, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1784,7 +1783,7 @@ function trader_midprice(array $high, array $low, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_min(array $real, int $timePeriod = 30): array
+function trader_min(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1797,7 +1796,7 @@ function trader_min(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_minindex(array $real, int $timePeriod = 30): array
+function trader_minindex(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1810,7 +1809,7 @@ function trader_minindex(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_minmax(array $real, int $timePeriod = 30): array
+function trader_minmax(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1823,7 +1822,7 @@ function trader_minmax(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_minmaxindex(array $real, int $timePeriod = 30): array
+function trader_minmaxindex(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1838,7 +1837,7 @@ function trader_minmaxindex(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_minus_di(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_minus_di(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1852,7 +1851,7 @@ function trader_minus_di(array $high, array $low, array $close, int $timePeriod 
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_minus_dm(array $high, array $low, int $timePeriod = 14): array
+function trader_minus_dm(array $high, array $low, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1865,7 +1864,7 @@ function trader_minus_dm(array $high, array $low, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_mom(array $real, int $timePeriod = 10): array
+function trader_mom(array $real, $timePeriod = 10)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1879,7 +1878,7 @@ function trader_mom(array $real, int $timePeriod = 10): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_mult(array $real0, array $real1): array
+function trader_mult(array $real0, array $real1)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1894,7 +1893,7 @@ function trader_mult(array $real0, array $real1): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_natr(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_natr(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1907,7 +1906,7 @@ function trader_natr(array $high, array $low, array $close, int $timePeriod = 14
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_obv(array $real, array $volume): array
+function trader_obv(array $real, array $volume)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1922,7 +1921,7 @@ function trader_obv(array $real, array $volume): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_plus_di(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_plus_di(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1936,7 +1935,7 @@ function trader_plus_di(array $high, array $low, array $close, int $timePeriod =
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_plus_dm(array $high, array $low, int $timePeriod = 14): array
+function trader_plus_dm(array $high, array $low, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1951,7 +1950,7 @@ function trader_plus_dm(array $high, array $low, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 16, int $mAType = TRADER_MA_TYPE_SMA): array
+function trader_ppo(array $real, $fastPeriod = 12, $slowPeriod = 16, $mAType = TRADER_MA_TYPE_SMA)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1964,7 +1963,7 @@ function trader_ppo(array $real, int $fastPeriod = 12, int $slowPeriod = 16, int
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_roc(array $real, int $timePeriod = 10): array
+function trader_roc(array $real, $timePeriod = 10)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1977,7 +1976,7 @@ function trader_roc(array $real, int $timePeriod = 10): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_rocp(array $real, int $timePeriod = 10): array
+function trader_rocp(array $real, $timePeriod = 10)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -1990,7 +1989,7 @@ function trader_rocp(array $real, int $timePeriod = 10): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_rocr100(array $real, int $timePeriod = 10): array
+function trader_rocr100(array $real, $timePeriod = 10)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2003,7 +2002,7 @@ function trader_rocr100(array $real, int $timePeriod = 10): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_rocr(array $real, int $timePeriod = 10): array
+function trader_rocr(array $real, $timePeriod = 10)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2016,7 +2015,7 @@ function trader_rocr(array $real, int $timePeriod = 10): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_rsi(array $real, int $timePeriod = 14): array
+function trader_rsi(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2031,7 +2030,7 @@ function trader_rsi(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sar(array $high, array $low, float $acceleration = 0.02, float $maximum = 0.2): array
+function trader_sar(array $high, array $low, $acceleration = 0.02, $maximum = 0.2)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2055,15 +2054,15 @@ function trader_sar(array $high, array $low, float $acceleration = 0.02, float $
 function trader_sarext(
     array $high,
     array $low,
-    float $startValue = 0.0,
-    float $offsetOnReverse = 0.0,
-    float $accelerationInitLong = 0.02,
-    float $accelerationLong = 0.02,
-    float $accelerationMaxLong = 0.2,
-    float $accelerationInitShort = 0.02,
-    float $accelerationShort = 0.02,
-    float $accelerationMaxShort = 0.2
-): array {
+    $startValue = 0.0,
+    $offsetOnReverse = 0.0,
+    $accelerationInitLong = 0.02,
+    $accelerationLong = 0.02,
+    $accelerationMaxLong = 0.2,
+    $accelerationInitShort = 0.02,
+    $accelerationShort = 0.02,
+    $accelerationMaxShort = 0.2
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -2073,7 +2072,7 @@ function trader_sarext(
  *
  * @param int $compatId Compatibility Id. TRADER_COMPATIBILITY_* series of constants should be used.
  */
-function trader_set_compat(int $compatId)
+function trader_set_compat($compatId)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2085,7 +2084,7 @@ function trader_set_compat(int $compatId)
  * @param int $functionId Function ID the factor should be set for. TRADER_FUNC_UNST_* constant series can be used to affect the corresponding function.
  * @param int $timePeriod Unstable period value.
  */
-function trader_set_unstable_period(int $functionId, int $timePeriod)
+function trader_set_unstable_period($functionId, $timePeriod)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2098,7 +2097,7 @@ function trader_set_unstable_period(int $functionId, int $timePeriod)
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sin(array $real): array
+function trader_sin(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2111,7 +2110,7 @@ function trader_sin(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sinh(array $real): array
+function trader_sinh(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2124,7 +2123,7 @@ function trader_sinh(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sma(array $real, int $timePeriod = 30): array
+function trader_sma(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2137,7 +2136,7 @@ function trader_sma(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sqrt(array $real): array
+function trader_sqrt(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2151,7 +2150,7 @@ function trader_sqrt(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_stddev(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
+function trader_stddev(array $real, $timePeriod = 5, $nbDev = 1.0)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2174,12 +2173,12 @@ function trader_stoch(
     array $high,
     array $low,
     array $close,
-    int $fastK_Period = 5,
-    int $slowK_Period = 3,
-    int $slowK_MAType = TRADER_MA_TYPE_SMA,
-    int $slowD_Period = 3,
-    int $slowD_MAType = TRADER_MA_TYPE_SMA
-): array {
+    $fastK_Period = 5,
+    $slowK_Period = 3,
+    $slowK_MAType = TRADER_MA_TYPE_SMA,
+    $slowD_Period = 3,
+    $slowD_MAType = TRADER_MA_TYPE_SMA
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -2199,10 +2198,10 @@ function trader_stochf(
     array $high,
     array $low,
     array $close,
-    int $fastK_Period = 5,
-    int $fastD_Period = 3,
-    int $fastD_MAType = TRADER_MA_TYPE_SMA
-): array {
+    $fastK_Period = 5,
+    $fastD_Period = 3,
+    $fastD_MAType = TRADER_MA_TYPE_SMA
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -2219,11 +2218,11 @@ function trader_stochf(
  */
 function trader_stochrsi(
     array $real,
-    int $timePeriod = 14,
-    int $fastK_Period = 5,
-    int $fastD_Period = 3,
-    int $fastD_MAType = TRADER_MA_TYPE_SMA
-): array {
+    $timePeriod = 14,
+    $fastK_Period = 5,
+    $fastD_Period = 3,
+    $fastD_MAType = TRADER_MA_TYPE_SMA
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -2236,7 +2235,7 @@ function trader_stochrsi(
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sub(array $real0, array $real1): array
+function trader_sub(array $real0, array $real1)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2249,7 +2248,7 @@ function trader_sub(array $real0, array $real1): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_sum(array $real, int $timePeriod = 30): array
+function trader_sum(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2263,7 +2262,7 @@ function trader_sum(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): array
+function trader_t3(array $real, $timePeriod = 5, $vFactor = 0.7)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2276,7 +2275,7 @@ function trader_t3(array $real, int $timePeriod = 5, float $vFactor = 0.7): arra
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_tan(array $real): array
+function trader_tan(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2289,7 +2288,7 @@ function trader_tan(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_tanh(array $real): array
+function trader_tanh(array $real)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2302,7 +2301,7 @@ function trader_tanh(array $real): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_tema(array $real, int $timePeriod = 30): array
+function trader_tema(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2316,7 +2315,7 @@ function trader_tema(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_trange(array $high, array $low, array $close): array
+function trader_trange(array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2329,7 +2328,7 @@ function trader_trange(array $high, array $low, array $close): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_trima(array $real, int $timePeriod = 30): array
+function trader_trima(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2342,7 +2341,7 @@ function trader_trima(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_trix(array $real, int $timePeriod = 30): array
+function trader_trix(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2355,7 +2354,7 @@ function trader_trix(array $real, int $timePeriod = 30): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_tsf(array $real, int $timePeriod = 14): array
+function trader_tsf(array $real, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2369,7 +2368,7 @@ function trader_tsf(array $real, int $timePeriod = 14): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_typprice(array $high, array $low, array $close): array
+function trader_typprice(array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2390,10 +2389,10 @@ function trader_ultosc(
     array $high,
     array $low,
     array $close,
-    int $timePeriod1 = 7,
-    int $timePeriod2 = 14,
-    int $timePeriod3 = 28
-): array {
+    $timePeriod1 = 7,
+    $timePeriod2 = 14,
+    $timePeriod3 = 28
+) {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
 
@@ -2406,7 +2405,7 @@ function trader_ultosc(
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
+function trader_var(array $real, $timePeriod = 5, $nbDev = 1.0)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2420,7 +2419,7 @@ function trader_var(array $real, int $timePeriod = 5, float $nbDev = 1.0): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_wclprice(array $high, array $low, array $close): array
+function trader_wclprice(array $high, array $low, array $close)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2435,7 +2434,7 @@ function trader_wclprice(array $high, array $low, array $close): array
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_willr(array $high, array $low, array $close, int $timePeriod = 14): array
+function trader_willr(array $high, array $low, array $close, $timePeriod = 14)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
@@ -2448,7 +2447,7 @@ function trader_willr(array $high, array $low, array $close, int $timePeriod = 1
  *
  * @return array Returns an array with calculated data or false on failure.
  */
-function trader_wma(array $real, int $timePeriod = 30): array
+function trader_wma(array $real, $timePeriod = 30)
 {
     throw new RuntimeException(EXCEPTION_MESSAGE);
 }
