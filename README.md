@@ -8,7 +8,7 @@ Install the library using Composer. Please read the [Composer Documentation](htt
 
 You don't need this package in production, please use `require-dev`.
 ```shell
-composer require --dev borutainfo/php-trader-ide-autocomplete
+composer require --dev boruta/php-trader-ide-autocomplete
 ```
 
 That's it, the IDE autocomplete should work.
