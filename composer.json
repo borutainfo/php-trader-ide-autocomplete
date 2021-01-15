@@ -1,6 +1,6 @@
 {
   "name": "borutainfo/php-trader-ide-autocomplete",
-  "description": "This package is used to activate the auto-complete function in the IDE for the extension: PHP Trader.",
+  "description": "This package allows you to activate the auto-complete in the IDE for native functions from the extension: PHP Trader.",
   "type": "library",
   "license": "MIT",
   "authors": [
