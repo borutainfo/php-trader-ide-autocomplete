@@ -18,6 +18,7 @@ That's it, the IDE autocomplete should work.
 Package exists in two versions:
 - version 1.* for PHP 5.5 and above: requires PHP >= 5.5 and `ext-trader` >= 0.4.1
 - version 2.* for PHP 7.0 and above: requires PHP >= 7.0 and `ext-trader` >= 0.4.1
+- version 3.* for PHP 8.0 and above: requires PHP >= 8.0 and `ext-trader` >= 0.5.1
 
 ## About
 
@@ -26,4 +27,3 @@ If your IDE does not auto-complete functions from the PHP Trader extension, add 
 ![PHPStorm auto-complete fixed](image.png "PHPStorm auto-complete fixed")
 
 The package has been created based on [LupeCode/phpTraderInterface](https://github.com/LupeCode/phpTraderInterface).
-

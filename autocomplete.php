@@ -1707,7 +1707,7 @@ function trader_max(array $real, int $timePeriod = 30): array
 }
 
 /**
- * Index of highest value over a specified period
+ * Index of the highest value over a specified period
  *
  * @param array $real Array of real values.
  * @param int $timePeriod [OPTIONAL] [DEFAULT 30] Number of period. Valid range from 2 to 100000.
@@ -1789,7 +1789,7 @@ function trader_min(array $real, int $timePeriod = 30): array
 }
 
 /**
- * Index of lowest value over a specified period
+ * Index of the lowest value over a specified period
  *
  * @param array $real Array of real values.
  * @param int $timePeriod [OPTIONAL] [DEFAULT 30] Number of period. Valid range from 2 to 100000.
@@ -2070,7 +2070,7 @@ function trader_sarext(
  * Set compatibility mode
  * Set compatibility mode which will affect the way calculations are done by all the extension functions.
  *
- * @param int $compatId Compatibility Id. TRADER_COMPATIBILITY_* series of constants should be used.
+ * @param int $compatId Compatibility ID. TRADER_COMPATIBILITY_* series of constants should be used.
  */
 function trader_set_compat(int $compatId)
 {
